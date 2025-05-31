@@ -271,7 +271,7 @@
     </script>
 </body>
 </html> -->
-
+<!--
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -381,4 +381,152 @@
     }
   </script>
 </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Useless Domain HQ</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: linear-gradient(135deg, #ffc0cb, #b0e0e6);
+      color: #333;
+      text-align: center;
+      padding: 40px;
+      animation: bgPulse 15s infinite;
+    }
+
+    @keyframes bgPulse {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
+
+    h1 {
+      font-size: 3.5em;
+      margin-bottom: 10px;
+    }
+
+    .box {
+      background: #fff;
+      padding: 20px;
+      margin: 25px auto;
+      border-radius: 25px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      max-width: 700px;
+    }
+
+    h2 {
+      color: #ff4500;
+    }
+
+    button {
+      background: #0077ff;
+      color: white;
+      padding: 10px 20px;
+      font-size: 1em;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-top: 15px;
+      transition: all 0.2s ease-in-out;
+    }
+
+    button:hover {
+      background: #005ecb;
+      transform: scale(1.1);
+    }
+
+    p {
+      font-size: 1.2em;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to Your Daily Dose of Nonsense</h1>
+  <p>The Internet’s most prestigious source of complete fiction.</p>
+
+  <div class="box" id="phd">
+    <h2>🧠 Fake PhD of the Day</h2>
+    <p id="phdText">Dr. Sheila Bubbles, PhD in Intergalactic Hamster Psychology (University of Mars, 1998)</p>
+  </div>
+
+  <div class="box" id="news">
+    <h2>📰 Breaking Fake News</h2>
+    <p id="newsText">World stunned as penguin elected CEO of global tech firm during Zoom mishap.</p>
+  </div>
+
+  <div class="box" id="law">
+    <h2>📜 Today's Absurd Law</h2>
+    <p id="lawText">"By order of the crown, all sandwiches must be sung to before consumption."</p>
+  </div>
+
+  <div class="box" id="history">
+    <h2>📚 Totally Real Historical Moment</h2>
+    <p id="factText">In 1833, Finland accidentally discovered time travel but forgot to write it down.</p>
+  </div>
+
+  <div class="box" id="excuse">
+    <h2>🌀 Feeling Unproductive?</h2>
+    <button onclick="generateExcuse()">Get a Useless Excuse</button>
+    <p id="excuseText" style="margin-top: 15px;"></p>
+  </div>
+
+  <script>
+    const phds = [
+      "Dr. Sheila Bubbles, PhD in Intergalactic Hamster Psychology (University of Mars, 1998)",
+      "Dr. Xander Plop, PhD in Quantum Banana Theory (Institute of Confused Science)",
+      "Dr. Felicity Crumb, PhD in Unsolicited Advice (Mailbox University)",
+      "Dr. Nimbus Fogsworth, PhD in Cloud Whispering (University of Sky People)",
+      "Dr. Juan Cheesebeard, PhD in Subaquatic Dance History (Atlantis Polytechnic)"
+    ];
+
+    const news = [
+      "World stunned as penguin elected CEO of global tech firm during Zoom mishap.",
+      "BREAKING: Local man finds Wi-Fi signal inside watermelon.",
+      "Experts baffled as moon mysteriously turns into cheese for 12 minutes.",
+      "Area cat claims tax exemption as dependent.",
+      "Study finds 9 out of 10 aliens prefer Earth’s ice cream to Uranus’s tacos."
+    ];
+
+    const laws = [
+      "All citizens must greet squirrels in Morse code on Mondays.",
+      "By order of the crown, all sandwiches must be sung to before consumption.",
+      "Sneezing during chess tournaments is now considered a foul.",
+      "Umbrellas must be worn upside down during the eclipse.",
+      "It is illegal to name a goldfish 'Steven' without a government permit."
+    ];
+
+    const facts = [
+      "In 1833, Finland accidentally discovered time travel but forgot to write it down.",
+      "Napoleon once challenged a giraffe to a dance battle and lost.",
+      "Shakespeare briefly worked as a barista during his ‘writer’s block’ phase.",
+      "The Great Wall of China was originally a queue for bubble tea.",
+      "Mozart’s lesser-known cousin invented the kazoo in a moment of chaos."
+    ];
+
+    const excuses = [
+      "I couldn’t respond because I was stuck in a sock dimension.",
+      "The Wi-Fi was busy arguing with the microwave.",
+      "I got hypnotized by a spinning donut GIF.",
+      "A pigeon borrowed my laptop for a Tinder date.",
+      "My brain went on a coffee break and never came back."
+    ];
+
+    function getRandom(arr) {
+      return arr[Math.floor(Math.random() * arr.length)];
+    }
+
+    document.getElementById('phdText').textContent = getRandom(phds);
+    document.getElementById('newsText').textContent = getRandom(news);
+    document.getElementById('lawText').textContent = `"${getRandom(laws)}"`;
+    document.getElementById('factText').textContent = getRandom(facts);
+
+    function generateExcuse() {
+      document.getElementById('excuseText').textContent = getRandom(excuses);
+    }
+  </script>
+</body>
 </html>
+

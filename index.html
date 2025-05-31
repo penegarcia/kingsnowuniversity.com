@@ -383,7 +383,7 @@
 </body>
 </html> -->
 
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -528,5 +528,163 @@
     }
   </script>
 </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Meet Our Computer in Political Office</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: linear-gradient(135deg, #ffefd5, #d0f0fd);
+      color: #333;
+      text-align: center;
+      padding: 50px;
+      animation: bgPulse 10s infinite;
+    }
+
+    @keyframes bgPulse {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    h1 {
+      font-size: 2.8em;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      font-style: italic;
+      color: #777;
+      margin-bottom: 30px;
+    }
+
+    .box {
+      background: #fff;
+      padding: 25px;
+      margin: 20px auto;
+      border-radius: 20px;
+      box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+      max-width: 700px;
+    }
+
+    h2 {
+      color: #e55b3c;
+    }
+
+    button {
+      background: #ff7a45;
+      color: white;
+      padding: 10px 20px;
+      font-size: 1.1em;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    button:hover {
+      transform: scale(1.07);
+    }
+
+    p {
+      font-size: 1.2em;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Our Politically Appointed Computer</h1>
+  <p class="subtitle">Keeping democracy running, one fake PhD at a time.</p>
+
+  <div class="box" id="profile">
+    <h2>💻 Employee File</h2>
+    <p><strong>Model:</strong> <span id="nameText">HP Pavilion – with Fake PhD</span></p>
+    <p><strong>PhD:</strong> <span id="phdText">PhD in Constituency Email Reply Automation</span></p>
+    <p><strong>Position:</strong> <span id="jobText">Undersecretary for Campaign Hashtag Strategy</span></p>
+  </div>
+
+  <div class="box" id="boss">
+    <h2>🧑‍⚖️ Statement from the Hon. Minister of Staff Confusion</h2>
+    <p id="bossText">“Technically, it’s not human. But legally, it has more credentials than my brother-in-law.”</p>
+  </div>
+
+  <div class="box" id="excuse">
+    <h2>🗳️ Why Can't We Remove It From Office?</h2>
+    <button onclick="generateExcuse()">Unleash the Excuse</button>
+    <p id="excuseText" style="margin-top: 15px;"></p>
+  </div>
+
+  <script>
+    const models = [
+      "HP Pavilion – with Fake PhD",
+      "Dell XPS 13 – Former Minister of PDFs",
+      "Acer Aspire – Vice Chair of Spreadsheets",
+      "MacBook Air – Acting Governor of WiFi Stability",
+      "Lenovo ThinkPad – Head of Keyboard Jams",
+      "Toshiba Satellite – Regional Delegate for PowerPoint",
+      "ASUS ZenBook – Commissioner of Sticky Notes"
+    ];
+
+    const phds = [
+      "PhD in Constituency Email Reply Automation",
+      "PhD in Public Image Compression",
+      "PhD in Digital Handshakes and Protocol Crashes",
+      "PhD in Parliamentary Livestream Buffering",
+      "PhD in Algorithmic Voter Outreach",
+      "PhD in Department of Printer Error Messages",
+      "PhD in Committee Meeting Auto-Transcriptions"
+    ];
+
+    const jobs = [
+      "Undersecretary for Campaign Hashtag Strategy",
+      "Deputy Minister of Political Memes",
+      "Director of National Survey Monkey Forms",
+      "Senior Advisor for Redundant Policy Formatting",
+      "State Coordinator for Viral Apologies",
+      "Special Envoy to the USB Port Council",
+      "Shadow Minister of Passive-Aggressive Tweets"
+    ];
+
+    const bossQuotes = [
+      "“Technically, it’s not human. But legally, it has more credentials than my brother-in-law.”",
+      "“That machine secured 40,000 retweets during budget week. You don’t just ‘power off’ that kind of influence.”",
+      "“It once formatted a manifesto in Comic Sans. That takes courage.”",
+      "“I can't fire it—it's on the same WhatsApp group as my campaign donors.”",
+      "“It showed up to work on a public holiday. That’s the kind of loyalty I need.”",
+      "“Removing it would destabilize three ministries and the party Spotify account.”",
+      "“It helped me deepfake my degree. We're in this together now.”"
+    ];
+
+    const excuses = [
+      "It’s legally registered as a junior senator in three districts.",
+      "Unplugging it would crash the national survey results dashboard.",
+      "It has more likes on LinkedIn than the actual Prime Minister.",
+      "It blackmailed IT into granting it admin privileges.",
+      "Its cousin is the office scanner. It’s a family thing.",
+      "The party chair owes it money (long story).",
+      "It printed its own contract. Nobody can find the original."
+    ];
+
+    function getRandom(arr) {
+      return arr[Math.floor(Math.random() * arr.length)];
+    }
+
+    // Initialize the profile
+    document.getElementById('nameText').textContent = getRandom(models);
+    document.getElementById('phdText').textContent = getRandom(phds);
+    document.getElementById('jobText').textContent = getRandom(jobs);
+    document.getElementById('bossText').textContent = getRandom(bossQuotes);
+
+    function generateExcuse() {
+      document.getElementById('excuseText').textContent = getRandom(excuses);
+    }
+  </script>
+</body>
 </html>
+
 
